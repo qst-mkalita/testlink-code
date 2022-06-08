@@ -1,0 +1,28 @@
+{
+    "name": "Testlink Development",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "workspace",
+    "workspaceFolder": "/var/www",
+    "remoteUser": "vscode",
+    "settings": {
+        "[php]": {
+            "editor.formatOnSave": true
+        },
+        "search.exclude": {
+            "**/node_modules": true,
+            "**/bower_components": true,
+            "**/*.code-search": true,
+            "**/vendor/*/**": true
+        }
+    },
+    "extensions": [
+        "mikestead.dotenv",
+        "EditorConfig.EditorConfig",
+        "emilast.LogFileHighlighter",
+        "neilbrayfield.php-docblocker",
+        "bmewburn.vscode-intelephense-client",
+        "felixfbecker.php-debug"
+    ]
+}
