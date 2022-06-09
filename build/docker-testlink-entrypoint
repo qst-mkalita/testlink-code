@@ -1,0 +1,29 @@
+#!/bin/sh -e
+
+abort() {
+    echo "Failed to start TestLink: $1."
+    echo
+    echo "Abort."
+    echo
+    exit 1
+}
+
+custom_config.sh
+
+echo "Starting nginx..."
+service nginx start
+if [ $? -ne 0 ]
+then
+    abort "nginx failed to start"
+fi
+
+echo "Starting php-fpm..."
+php-fpm
+if [ $? -ne 0 ]
+then
+    abort "php-fpm failed to start"
+fi
+
+echo
+echo "Done."
+echo

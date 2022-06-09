@@ -1,4 +1,4 @@
-FROM php:8.0-fpm-bullseye
+FROM php:7.4-fpm
 
 ARG USER_UID=1000
 ARG USER_GID=${USER_UID}

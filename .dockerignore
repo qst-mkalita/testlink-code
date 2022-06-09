@@ -1,0 +1,6 @@
+.devcontainer/*
+.docker/*
+logs/*
+upload_area/*
+config_db.inc.php
+custom_config*

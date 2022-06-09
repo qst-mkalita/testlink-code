@@ -1,4 +1,4 @@
-FROM php:8.0-cli-bullseye
+FROM php:7.4-cli
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
