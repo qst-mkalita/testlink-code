@@ -16,6 +16,8 @@ ENV MAIL_ADMIN=''
 ENV MAIL_FROM=''
 ENV MAIL_RETURN=''
 
+ENV COMPANY_NAME='<Your company name here>'
+
 # PHP_CPPFLAGS are used by the docker-php-ext-* scripts
 ENV PHP_CPPFLAGS="$PHP_CPPFLAGS -std=c++11"
 

@@ -25,6 +25,9 @@ echo "\$g_tl_admin_email = '$MAIL_ADMIN';" >> $file
 echo "\$g_from_email = '$MAIL_FROM';" >> $file
 echo "\$g_return_path_email = '$MAIL_RETURN';" >> $file
 
+### Other settings ###
+echo "\$tlCfg->document_generator->company_name = '$COMPANY_NAME';" >> $file
+
 chown www-data $file
 
 echo
